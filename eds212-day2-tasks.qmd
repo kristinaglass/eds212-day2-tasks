@@ -28,3 +28,19 @@ der_Pa = deriv(Pa, 'a')
 a <- 1.2
 eval(der_Pa)
 ```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+ggplot(data = penguins, aes(x = "bill_length_mm", 
+                            y = "bill_depth_mm")) +
+  geom_point(aes(color = species)) +
+  scale_color_manual(values = c("purple", "cyan3", "goldenrod")) +
+  labs(x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       title = "Palmer Penguins Bill Size") +
+  geom_jitter()
+```

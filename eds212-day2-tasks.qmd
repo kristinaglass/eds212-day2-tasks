@@ -8,3 +8,23 @@ title: "eds212-day2-tasks"
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+```{r}
+fx = expression(x ^ 2)
+der_fx = deriv(fx, 'x')
+```
+
+```{r}
+x <- 3
+eval(der_fx)
+```
+
+```{r}
+Pa = expression(2 * (3 * a + 2)^ 4)
+der_Pa = deriv(Pa, 'a')
+```
+
+```{r}
+a <- 1.2
+eval(der_Pa)
+```

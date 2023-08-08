@@ -1,0 +1,10 @@
+---
+title: "eds212-day2-tasks"
+---
+
+## Attaching Libraries
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
